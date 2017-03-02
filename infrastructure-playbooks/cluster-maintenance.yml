@@ -1,5 +1,5 @@
 ---
-# This playbook was made to automate Ceph servers maintenance
+# This playbook was made to automate Ceph servers maintenance 
 # Typical use case: hardware change
 # By running this playbook you will set the 'noout' flag on your
 # cluster, which means that OSD **can't** be marked as out
