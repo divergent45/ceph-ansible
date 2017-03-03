@@ -1,6 +1,7 @@
 [base_hw_prep_for_openstack]
+ceph1
 #newtonhost1
-#[allcephhosts]
+[allcephhosts]
 
 [mons]
 ceph2
