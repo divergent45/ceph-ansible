@@ -1,0 +1,14 @@
+[base_hw_prep_for_openstack]
+#newtonhost1
+[allcephhosts]
+
+[mons]
+10.0.0.82
+10.0.0.83
+10.0.0.85
+[osds]
+10.0.0.84
+10.0.0.86
+10.0.0.87
+[rgws]
+10.0.0.81
