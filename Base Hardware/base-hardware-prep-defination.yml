@@ -46,7 +46,7 @@ servers_to_reboot:
 #################################################################################
 
 
-#network interface defination for compute6 (Actual Hostname) 
+#network interface defination for compute6 (Actual Hostname)#
 network_interfaces:  
      - {forHost: ceph1, description: Primary and First physical interface, name: enp6s7,address: ,netmask: ,broadcast: ,
         gateway: ,dns: ,part_of_vlan: True,parent_name: enp6s7,part_of_bridge: True,
