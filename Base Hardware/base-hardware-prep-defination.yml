@@ -36,7 +36,7 @@ nova_compute_server_hostnames:
   - newton-kvm1
 servers_to_reboot:
   - toavoidnull
-  - ceph4
+  - ceph5
 #  - ceph3
 #  - ceph5
 #  - ceph2
@@ -108,6 +108,29 @@ network_interfaces:
         bridge_description: CephCluster Bridge ,bridge_name: br-ceph-cluster,
         bridge_address: 11.0.0.84 ,bridge_netmask: 255.255.255.0,bridge_broadcast: 11.0.0.255 ,bridge_gateway: ,
         bridge_dns: }     
+     - {forHost: ceph5, description: Primary and First physical interface, name: enp10s2f0,address: ,netmask: ,broadcast: ,
+        gateway: ,dns: ,part_of_vlan: True,parent_name: enp10s2f0,part_of_bridge: True,
+        bridge_description: Bridge for openstack managment network,bridge_name: br-mgmt,
+        bridge_address: 10.0.0.85,bridge_netmask: 255.255.255.0,bridge_broadcast: 10.0.0.255,bridge_gateway: ,
+        bridge_dns: }        
+     - {forHost: ceph5, description: VLAN10 sitting on First Physical Interface, name: enp10s2f0.10 ,address: ,netmask: ,broadcast: ,
+        gateway: ,dns: ,part_of_vlan: True,parent_name: enp10s2f0,part_of_bridge: True,
+        bridge_description: Bridge for Storage network,bridge_name: br-storage,
+        bridge_address: 10.0.2.85,bridge_netmask: 255.255.255.0,bridge_broadcast: 10.0.2.255,bridge_gateway: ,
+        bridge_dns: }        
+     - {forHost: ceph5, description: Ceph Cluster on 2nd Physical interface, name: enp10s2f1 ,address: ,netmask: ,broadcast: ,
+        gateway: ,dns: ,part_of_vlan: True,parent_name: enp10s2f1 ,part_of_bridge: True,
+        bridge_description: CephCluster Bridge ,bridge_name: br-ceph-cluster,
+        bridge_address: 11.0.0.85 ,bridge_netmask: 255.255.255.0,bridge_broadcast: 11.0.0.255 ,bridge_gateway: ,
+        bridge_dns: } 
+     
+     
+     
+     
+     
+     
+     
+     
           
 ############################################################################################
 
