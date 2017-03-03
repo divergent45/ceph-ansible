@@ -1,5 +1,5 @@
 [base_hw_prep_for_openstack]
-ceph1
+ceph2
 #newtonhost1
 [allcephhosts]
 

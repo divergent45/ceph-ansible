@@ -36,7 +36,7 @@ nova_compute_server_hostnames:
   - newton-kvm1
 servers_to_reboot:
   - toavoidnull
-#  - ceph2
+  - ceph2
 #  - ceph3
 #  - ceph5
 #  - ceph4
@@ -74,10 +74,10 @@ network_interfaces:
         bridge_description: Bridge for Storage network,bridge_name: br-storage,
         bridge_address: 10.0.2.82,bridge_netmask: 255.255.255.0,bridge_broadcast: 10.0.2.255,bridge_gateway: ,
         bridge_dns: }        
-     - {forHost: ceph2, description: Second physical interface, name: enp7s8 ,address: 11.0.0.82 ,netmask: 255.255.255.0 ,broadcast: ,
-        gateway: ,dns: ,part_of_vlan: False,parent_name: enp7s8,part_of_bridge: False,
+     - {forHost: ceph2, description: Ceph Cluster on 2nd Physical interface, name: enp7s8 ,address: ,netmask: ,broadcast: ,
+        gateway: ,dns: ,part_of_vlan: True,parent_name: enp7s8,part_of_bridge: True,
         bridge_description: ,bridge_name: ,
-        bridge_address: ,bridge_netmask: ,bridge_broadcast: ,bridge_gateway: ,
+        bridge_address: 11.0.0.82,bridge_netmask: 255.255.255.0 ,bridge_broadcast: 11.0.0.255 ,bridge_gateway: ,
         bridge_dns: }     
         
      - {forHost: ceph3, description: Primary and First physical interface, name: enp6s7,address: ,netmask: ,broadcast: ,
