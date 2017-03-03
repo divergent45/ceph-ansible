@@ -62,8 +62,7 @@ network_interfaces:
         gateway: ,dns: ,part_of_vlan: True,parent_name: enp7s8 ,part_of_bridge: True,
         bridge_description: CephCluster Bridge ,bridge_name: br-ceph-cluster,
         bridge_address: 11.0.0.81 ,bridge_netmask: 255.255.255.0,bridge_broadcast: 11.0.0.255 ,bridge_gateway: ,
-        bridge_dns: }       
-
+        bridge_dns: }  
      - {forHost: ceph2, description: Primary and First physical interface, name: enp6s7,address: ,netmask: ,broadcast: ,
         gateway: ,dns: ,part_of_vlan: True,parent_name: enp6s7,part_of_bridge: True,
         bridge_description: Bridge for openstack managment network,bridge_name: br-mgmt,
@@ -73,13 +72,12 @@ network_interfaces:
         gateway: ,dns: ,part_of_vlan: True,parent_name: enp6s7,part_of_bridge: True,
         bridge_description: Bridge for Storage network,bridge_name: br-storage,
         bridge_address: 10.0.2.82,bridge_netmask: 255.255.255.0,bridge_broadcast: 10.0.2.255,bridge_gateway: ,
-        bridge_dns: }        
+        bridge_dns: } 
      - {forHost: ceph2, description: Ceph Cluster on 2nd Physical interface, name: enp7s8 ,address: ,netmask: ,broadcast: ,
-        gateway: ,dns: ,part_of_vlan: True,parent_name: enp7s8,part_of_bridge: True,
-        bridge_description: ,bridge_name: ,
-        bridge_address: 11.0.0.82,bridge_netmask: 255.255.255.0 ,bridge_broadcast: 11.0.0.255 ,bridge_gateway: ,
-        bridge_dns: }     
-        
+        gateway: ,dns: ,part_of_vlan: True,parent_name: enp7s8 ,part_of_bridge: True,
+        bridge_description: CephCluster Bridge ,bridge_name: br-ceph-cluster,
+        bridge_address: 11.0.0.82 ,bridge_netmask: 255.255.255.0,bridge_broadcast: 11.0.0.255 ,bridge_gateway: ,
+        bridge_dns: }            
      - {forHost: ceph3, description: Primary and First physical interface, name: enp6s7,address: ,netmask: ,broadcast: ,
         gateway: ,dns: ,part_of_vlan: True,parent_name: enp6s7,part_of_bridge: True,
         bridge_description: Bridge for openstack managment network,bridge_name: br-mgmt,
