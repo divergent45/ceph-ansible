@@ -36,8 +36,8 @@ nova_compute_server_hostnames:
   - newton-kvm1
 servers_to_reboot:
   - toavoidnull
-  - ceph2
-#  - ceph3
+#  - ceph2
+  - ceph3
 #  - ceph5
 #  - ceph4
 #  - ceph6
@@ -77,38 +77,36 @@ network_interfaces:
         gateway: ,dns: ,part_of_vlan: True,parent_name: enp7s8 ,part_of_bridge: True,
         bridge_description: CephCluster Bridge ,bridge_name: br-ceph-cluster,
         bridge_address: 11.0.0.82 ,bridge_netmask: 255.255.255.0,bridge_broadcast: 11.0.0.255 ,bridge_gateway: ,
-        bridge_dns: }            
-     - {forHost: ceph3, description: Primary and First physical interface, name: enp6s7,address: ,netmask: ,broadcast: ,
-        gateway: ,dns: ,part_of_vlan: True,parent_name: enp6s7,part_of_bridge: True,
+        bridge_dns: }     
+     - {forHost: ceph3, description: Primary and First physical interface, name: enp10s3,address: ,netmask: ,broadcast: ,
+        gateway: ,dns: ,part_of_vlan: True,parent_name: enp10s3,part_of_bridge: True,
         bridge_description: Bridge for openstack managment network,bridge_name: br-mgmt,
         bridge_address: 10.0.0.83,bridge_netmask: 255.255.255.0,bridge_broadcast: 10.0.0.255,bridge_gateway: ,
         bridge_dns: }        
-     - {forHost: ceph3, description: VLAN10 sitting on First Physical Interface, name: enp6s7.10 ,address: ,netmask: ,broadcast: ,
-        gateway: ,dns: ,part_of_vlan: True,parent_name: enp6s7,part_of_bridge: True,
+     - {forHost: ceph3, description: VLAN10 sitting on First Physical Interface, name: enp10s3.10 ,address: ,netmask: ,broadcast: ,
+        gateway: ,dns: ,part_of_vlan: True,parent_name: enp10s3,part_of_bridge: True,
         bridge_description: Bridge for Storage network,bridge_name: br-storage,
-        bridge_address: 10.0.2.83 ,bridge_netmask: 255.255.255.0,bridge_broadcast: 10.0.2.255,bridge_gateway: ,
+        bridge_address: 10.0.2.83,bridge_netmask: 255.255.255.0,bridge_broadcast: 10.0.2.255,bridge_gateway: ,
         bridge_dns: }        
-     - {forHost: ceph3, description: Second physical interface, name: enp7s8 ,address: 11.0.0.83 ,netmask: 255.255.255.0 ,broadcast: ,
-        gateway: ,dns: ,part_of_vlan: False,parent_name: enp7s8,part_of_bridge: False ,
-        bridge_description: ,bridge_name: ,
-        bridge_address: ,bridge_netmask: ,bridge_broadcast: ,bridge_gateway: ,
-        bridge_dns: }       
+     - {forHost: ceph3, description: Ceph Cluster on 2nd Physical interface, name: enp6s7 ,address: ,netmask: ,broadcast: ,
+        gateway: ,dns: ,part_of_vlan: True,parent_name: enp6s7 ,part_of_bridge: True,
+        bridge_description: CephCluster Bridge ,bridge_name: br-ceph-cluster,
+        bridge_address: 11.0.0.83 ,bridge_netmask: 255.255.255.0,bridge_broadcast: 11.0.0.255 ,bridge_gateway: ,
+        bridge_dns: }  
      
-     - {forHost: ceph4, description: Primary and First physical interface, name: enp6s7,address: ,netmask: ,broadcast: ,
-        gateway: ,dns: ,part_of_vlan: True,parent_name: enp6s7,part_of_bridge: True,
-        bridge_description: Bridge for openstack managment network,bridge_name: br-mgmt,
-        bridge_address: 10.0.0.84,bridge_netmask: 255.255.255.0,bridge_broadcast: 10.0.0.255,bridge_gateway: ,
-        bridge_dns: }        
-     - {forHost: ceph4, description: VLAN10 sitting on First Physical Interface, name: enp6s7.10 ,address: ,netmask: ,broadcast: ,
-        gateway: ,dns: ,part_of_vlan: True,parent_name: enp6s7,part_of_bridge: True,
-        bridge_description: Bridge for Storage network,bridge_name: br-storage,
-        bridge_address: 10.0.2.84 ,bridge_netmask: 255.255.255.0,bridge_broadcast: 10.0.2.255,bridge_gateway: ,
-        bridge_dns: }        
-     - {forHost: ceph4, description: Second physical interface, name: enp7s8 ,address: 11.0.0.84 ,netmask: 255.255.255.0 ,broadcast: ,
-        gateway: ,dns: ,part_of_vlan: False,parent_name: enp7s8,part_of_bridge: False ,
-        bridge_description: ,bridge_name: ,
-        bridge_address: ,bridge_netmask: ,bridge_broadcast: ,bridge_gateway: ,
-        bridge_dns: }       
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+          
 ############################################################################################
 
 #Proxy and apt configuration 
