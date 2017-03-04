@@ -1,0 +1,275 @@
+
+ceph1
+==================================
+
+Disk /dev/sda: 136.6 GiB, 146695782400 bytes, 286515200 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x35870599
+
+Device     Boot   Start       End   Sectors   Size Id Type
+/dev/sda1  *       2048    999423    997376   487M 83 Linux
+/dev/sda2       1001470 286513151 285511682 136.1G  5 Extended
+/dev/sda5       1001472 286513151 285511680 136.1G 8e Linux LVM
+
+
+Disk /dev/sdb: 136.6 GiB, 146695782400 bytes, 286515200 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/sdc: 273.2 GiB, 293391564800 bytes, 573030400 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+
+ceph2
+=============================================
+
+Disk /dev/sda: 68.2 GiB, 73274490880 bytes, 143114240 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+
+Device     Boot   Start       End   Sectors  Size Id Type
+/dev/sda1  *       2048    999423    997376  487M 83 Linux
+/dev/sda2       1001470 143112191 142110722 67.8G  5 Extended
+/dev/sda5       1001472 143112191 142110720 67.8G 8e Linux LVM
+
+
+Disk /dev/sdb: 68.2 GiB, 73274490880 bytes, 143114240 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x7243d52c
+
+Device     Boot Start       End   Sectors  Size Id Type
+/dev/sdb1  *       63 143090954 143090892 68.2G  7 HPFS/NTFS/exFAT
+
+
+Disk /dev/sdc: 273.2 GiB, 293391564800 bytes, 573030400 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xe926af91
+
+Device     Boot Start       End   Sectors   Size Id Type
+/dev/sdc1          63 573006419 573006357 273.2G  7 HPFS/NTFS/exFAT
+
+
+Disk /dev/mapper/ceph2--vg-root: 63.8 GiB, 68463624192 bytes, 133718016 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes                                                                             
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+ceph3
+============================================================
+Disk /dev/sdb: 136.6 GiB, 146695782400 bytes, 286515200 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes                                                                                 
+Disklabel type: dos
+Disk identifier: 0x00000081
+
+Device     Boot Start       End   Sectors   Size Id Type
+/dev/sdb1          63 573022484 573022422 273.2G  7 HPFS/NTFS/exFAT
+
+
+Disk /dev/sda: 136.6 GiB, 146695782400 bytes, 286515200 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xb23f1c47
+
+Device     Boot   Start       End   Sectors   Size Id Type
+/dev/sda1  *       2048    999423    997376   487M 83 Linux
+/dev/sda2       1001470 286513151 285511682 136.1G  5 Extended
+/dev/sda5       1001472 286513151 285511680 136.1G 8e Linux LVM
+
+
+Disk /dev/sdc: 273.2 GiB, 293391564800 bytes, 573030400 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+
+
+Ceph4
+==========================
+Disk /dev/sdc: 273.2 GiB, 293391564800 bytes, 573030400 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes                                                                                 
+Disklabel type: dos
+Disk identifier: 0x4b9ae697
+
+Device     Boot Start       End   Sectors   Size Id Type
+/dev/sdc1          63 573022484 573022422 273.2G 83 Linux
+
+
+Disk /dev/sdb: 33.9 GiB, 36364615680 bytes, 71024640 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x3c8e50f0
+
+Device     Boot    Start      End  Sectors  Size Id Type
+/dev/sdb1             32    63487    63456   31M de Dell Utility
+/dev/sdb2  *       63488   370687   307200  150M 83 Linux
+/dev/sdb3         370688  4564991  4194304    2G 83 Linux
+/dev/sdb4        4564992 71024639 66459648 31.7G  f W95 Ext'd (LBA)
+/dev/sdb5        4565024 11806719  7241696  3.5G 83 Linux
+/dev/sdb6       11806752 13903871  2097120 1024M 83 Linux
+/dev/sdb7       13903904 69976063 56072160 26.8G 83 Linux
+/dev/sdb8       69976096 71024639  1048544  512M 82 Linux swap / Solaris
+
+
+Disk /dev/sda: 33.9 GiB, 36364615680 bytes, 71024640 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x0b75a148
+
+Device     Boot   Start      End  Sectors  Size Id Type
+/dev/sda1  *       2048   999423   997376  487M 83 Linux                                                                          
+/dev/sda2       1001470 71022591 70021122 33.4G  5 Extended
+/dev/sda5       1001472 71022591 70021120 33.4G 8e Linux LVM
+
+
+ceph5
+=======================================================
+
+Disk /dev/sda: 68.2 GiB, 73274490880 bytes, 143114240 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes                                                                                 
+Disklabel type: dos
+Disk identifier: 0x76d06102
+
+Device     Boot   Start       End   Sectors  Size Id Type
+/dev/sda1  *       2048    999423    997376  487M 83 Linux
+/dev/sda2       1001470 143112191 142110722 67.8G  5 Extended
+/dev/sda5       1001472 143112191 142110720 67.8G 8e Linux LVM
+
+
+Disk /dev/sdc: 273.2 GiB, 293391564800 bytes, 573030400 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000081
+
+Device     Boot     Start       End   Sectors   Size Id Type
+/dev/sdc1              63 286503209 286503147 136.6G  7 HPFS/NTFS/exFAT
+/dev/sdc2       286503210 573022484 286519275 136.6G  7 HPFS/NTFS/exFAT
+
+
+Disk /dev/sdb: 68.2 GiB, 73274490880 bytes, 143114240 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x8769ddd5
+
+Device     Boot Start       End   Sectors  Size Id Type
+/dev/sdb1  *       63 143090954 143090892 68.2G  7 HPFS/NTFS/exFAT
+
+ceph6
+===============================================
+
+Disk /dev/sda: 68.2 GiB, 73274490880 bytes, 143114240 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes                                                                                 
+Disklabel type: dos
+Disk identifier: 0x168276c6
+
+Device     Boot   Start       End   Sectors  Size Id Type
+/dev/sda1  *       2048    999423    997376  487M 83 Linux
+/dev/sda2       1001470 143112191 142110722 67.8G  5 Extended
+/dev/sda5       1001472 143112191 142110720 67.8G 8e Linux LVM
+
+
+Disk /dev/sdc: 136.5 GiB, 146548981760 bytes, 286228480 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/sdb: 68.2 GiB, 73274490880 bytes, 143114240 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+
+
+Disk /dev/mapper/ceph6--vg-root: 63.8 GiB, 68463624192 bytes, 133718016 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mapper/ceph6--vg-swap_1: 4 GiB, 4294967296 bytes, 8388608 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+ceph7
+==========================================
+
+Disk /dev/sda: 136.6 GiB, 146695782400 bytes, 286515200 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+
+I/O size (minimum/optimal): 512 bytes / 512 bytes                                                                                 
+Disklabel type: dos
+Disk identifier: 0x1108d6c6
+
+Device     Boot   Start       End   Sectors   Size Id Type
+/dev/sda1  *       2048    999423    997376   487M 83 Linux
+/dev/sda2       1001470 286513151 285511682 136.1G  5 Extended
+/dev/sda5       1001472 286513151 285511680 136.1G 8e Linux LVM
+
+
+Disk /dev/sdc: 273.2 GiB, 293391564800 bytes, 573030400 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000081
+
+Device     Boot     Start       End   Sectors   Size Id Type
+/dev/sdc1           16065 573022484 573006420 273.2G  f W95 Ext'd (LBA)
+/dev/sdc5           16128 206435249 206419122  98.4G  7 HPFS/NTFS/exFAT
+/dev/sdc6       206435313 573022484 366587172 174.8G  7 HPFS/NTFS/exFAT
+
+
+Disk /dev/sdb: 136.6 GiB, 146695782400 bytes, 286515200 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000081
+
+Device     Boot Start       End   Sectors   Size Id Type
+/dev/sdb1          63 573022484 573022422 273.2G  7 HPFS/NTFS/exFAT
+

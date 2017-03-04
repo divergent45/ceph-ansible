@@ -1,0 +1,40 @@
+ceph1
+Disk /dev/sdb: 136.6 GiB, 146695782400 bytes, 286515200 sectors
+Disk /dev/sdc: 273.2 GiB, 293391564800 bytes, 573030400 sectors
+
+
+ceph5
+
+/dev/sdb1 68 gb  FAT
+/dev/sdc1 136 FAT
+/dev/sdc2 136 FAT
+
+
+ceph6
+/dev/sdb 68 gb  
+/dev/sdc 136 gb
+
+ceph7
+/dev/sdb1          63 573022484 573022422 273.2G  7 HPFS/NTFS/exFAT
+/dev/sdc1           16065 573022484 573006420 273.2G  f W95 Ext'd (LBA)
+/dev/sdc5           16128 206435249 206419122  98.4G  7 HPFS/NTFS/exFAT
+/dev/sdc6       206435313 573022484 366587172 174.8G  7 HPFS/NTFS/exFAT
+
+
+ceph2
+/dev/sdb1  *       63 143090954 143090892 68.2G  7 HPFS/NTFS/exFAT
+/dev/sdc1          63 573006419 573006357 273.2G  7 HPFS/NTFS/exFAT
+
+
+ceph3
+/dev/sdb1          63 573022484 573022422 273.2G  7 HPFS/NTFS/exFAT
+
+ceph4
+/dev/sdc1          63 573022484 573022422 273.2G 83 Linux
+
+
+
+
+
+
+
