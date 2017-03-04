@@ -7,7 +7,7 @@
 # file as a good configuration file when no variable in it.
 dummy:
 
-# You can override vars by using host or group vars 
+# You can override vars by using host or group vars  
 
 ###########
 # GENERAL #
