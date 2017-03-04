@@ -81,8 +81,8 @@ dummy:
 # All scenario(except 3rd) inherit from the following device declaration
 
 devices:
-#  - /dev/sdb
-#  - /dev/sdc
+  - /dev/sdb
+  - /dev/sdc
 #  - /dev/sdd
 #  - /dev/sde
 
@@ -97,7 +97,7 @@ devices:
 # this option since ceph-disk has a built-in check which looks for empty devices.
 # Thus devices with existing partition tables will not be used.
 #
-osd_auto_discovery: true
+#osd_auto_discovery: true
 
 
 # !! WARNING !!
