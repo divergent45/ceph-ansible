@@ -128,9 +128,9 @@ osd_auto_discovery: true
 # While starting you have 2 options:
 # 1. Pre-allocate all the devices
 # 2. Progressively add new devices
-#raw_multi_journal: true
-#raw_journal_devices:
-#  - /dev/sdb
+raw_multi_journal: true
+raw_journal_devices:
+  - /dev/sdb
 #  - /dev/sdf
 #  - /dev/sdg
 #  - /dev/sdg
