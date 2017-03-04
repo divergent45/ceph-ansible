@@ -14,13 +14,13 @@ ceph2
 ceph3
 ceph4
 [osds]
-ceph5
+ceph1
 ceph6
 ceph7
 [rgws]
 ceph1
 [clients]
-localhost
+#localhost
 rsyslog
 
 
