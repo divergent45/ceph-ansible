@@ -20,7 +20,7 @@ ceph7
 [rgws]
 ceph1
 [clients]
-ansible
+localhost
 rsyslog
 
 
