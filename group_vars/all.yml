@@ -53,10 +53,10 @@ dummy:
 
 # /!\ EITHER ACTIVE ceph_stable OR ceph_stable_uca OR ceph_dev OR ceph_custom /!\
 
-#debian_package_dependencies:
-#  - python-pycurl
-#  - hdparm
-#  - ntp
+debian_package_dependencies:
+  - python-pycurl
+  - hdparm
+  - chrony
 
 #centos_package_dependencies:
 #  - python-pycurl
@@ -74,7 +74,7 @@ dummy:
 
 # Enable the ntp service by default to avoid clock skew on
 # ceph nodes
-#ntp_service_enabled: true
+ntp_service_enabled: false
 
 # The list of ceph packages needed for debian.
 # This variable should only be changed if packages are not available from a given
@@ -259,7 +259,7 @@ ceph_release_num:
 #
 # You must define either monitor_interface or monitor_address. Preference
 # will go to monitor_interface if both are defined.
-monitor_interface: br-mgmt
+#monitor_interface: br-mgmt
 monitor_address: 0.0.0.0
 # set to either ipv4 or ipv6, whichever your network is using
 #ip_version: ipv4
