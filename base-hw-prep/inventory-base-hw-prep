@@ -15,6 +15,7 @@ ceph3
 ceph4
 [osds]
 ceph1
+ceph5
 ceph6
 ceph7
 [rgws]
