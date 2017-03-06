@@ -129,8 +129,8 @@ ceph_release_num:
 #  giant: 0.87
 #  hammer: 0.94
 #  infernalis: 9
-  jewel: 10
-#  kraken: 11
+#  jewel: 10
+  kraken: 11
 
 # Use the option below to specify your applicable package tree, eg. when using non-LTS Ubuntu versions
 # # for a list of available Debian distributions, visit http://download.ceph.com/debian-{{ ceph_stable_release }}/dists/
