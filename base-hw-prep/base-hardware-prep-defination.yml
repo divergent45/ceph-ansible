@@ -2,13 +2,13 @@
 # ansible-playbook base-hw-prep.yml  -i inventory-base-hw-prep
 network_interface_build_needed_for_servers:
   - firstlinetoavoidnull
+  - ceph1
   - ceph2
   - ceph3
-  - ceph5
   - ceph4
+  - ceph5
   - ceph6
   - ceph7
-  - ceph1
   
 
 haproxy_server_hostnames: 
@@ -36,13 +36,13 @@ nova_compute_server_hostnames:
   - newton-kvm1
 servers_to_reboot:
   - toavoidnull
+  - ceph1
+  - ceph2
+  - ceph3
+  - ceph4
+  - ceph5
   - ceph6
   - ceph7
-#  - ceph5
-#  - ceph2
-#  - ceph6
-#  - ceph7
-#  - ceph1
 #################################################################################
 
 

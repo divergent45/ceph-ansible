@@ -8,13 +8,12 @@ ceph6
 ceph7
 #newtonhost1
 [allcephhosts]
-
 [mons]
+ceph1
 ceph2
 ceph3
-ceph4
 [osds]
-ceph1
+ceph4
 ceph5
 ceph6
 ceph7
