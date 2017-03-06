@@ -130,7 +130,7 @@ ceph_release_num:
 #  giant: 0.87
 #  hammer: 0.94
 #  infernalis: 9
-#  jewel: 10
+  jewel: 10
   kraken: 11.2.0
 
 # Use the option below to specify your applicable package tree, eg. when using non-LTS Ubuntu versions
