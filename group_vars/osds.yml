@@ -82,7 +82,7 @@ dummy:
 
 devices:
   - /dev/sdb
-  - /dev/sdc
+#  - /dev/sdc
 #  - /dev/sdd
 #  - /dev/sde
 
